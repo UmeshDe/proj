@@ -160,27 +160,36 @@
                                     </div>
 
                                     <div class="section-content">
+                                           <form method="POST" action="{{ route('admin.sales.orders.updateOrder', $order->id) }}">
+                                            @csrf() 
                                         <div class="row">
                                            <div class="control-group" :class="[errors.has('shipment[source]') ? 'has-error' : '']">
                                             <label for="shipment[source]" class="required">Owner comment</label>
                                             <br>
-                                            <textarea cols=70 rows=10></textarea>
+                                            <textarea cols=70 rows=10 name='owner_comment'>@if (! is_null($order->owner_comment)) {{ $order->owner_comment}}  @endif</textarea>
                                             </div>
                                         </div>
 
                                          <div class="row">
-                                          <div class="control-group" :class="[errors.has('shipment[source]') ? 'has-error' : '']">
-                                            <label>Delivery status</label>
-                                            <br>
-                                             <select name="status" class="control">
-                                                <option value="Pending">Pending</option>
-                                                <option value="Processing">Processing</option>
-                                                <option value="Shipped">Shipped</option>
-                                        
-                                            </select>
-                                            </div>
+                                          
+                                              <div class="control-group" :class="[errors.has('shipment[source]') ? 'has-error' : '']">
+                                                <label>Delivery status</label>
+                                                <br>
+                                                 <select name="status" class="control">
+                                                    <option value="pending">Pending</option>
+                                                    <option value="processing">Processing</option>
+                                                    <option value="shipped">Shipped</option>
+                                                </select>
+                                               
+                                        </div>
+                                        <div class="row">
+                                             <input type="submit" id="update"  class="btn btn-lg btn-primary" name="update" value="Save">       
+                                        </div>    
+                                        </form>
+                                                </div>
                                         <!-- </div> -->
-                                    </div>
+                                        </div>
+                                   
 
 
                                         {!! view_render_event('sales.order.customer_group.after', ['order' => $order]) !!}
@@ -586,3 +595,5 @@
 
     </div>
 @stop
+
+

@@ -64,7 +64,8 @@ class ProductForm extends FormRequest
     public function rules()
     {
         $product = $this->productRepository->find($this->id);
-        
+
+
         $this->rules = array_merge($product->getTypeInstance()->getTypeValidationRules(), [
             'sku'                => ['required', 'unique:products,sku,' . $this->id, new \Webkul\Core\Contracts\Validations\Slug],
             'images.*'           => 'mimes:jpeg,jpg,bmp,png',
@@ -73,7 +74,14 @@ class ProductForm extends FormRequest
             'special_price'      => ['nullable', new \Webkul\Core\Contracts\Validations\Decimal, 'lt:price'],
         ]);
 
+
+        
+
         foreach ($product->getEditableAttributes() as $attribute) {
+
+            if ($attribute->code != "tax_category_id" && $attribute->code != "height" && $attribute->code != "depth" && $attribute->code != "weight" && $attribute->code !== "width")
+            {
+
             if ($attribute->code == 'sku' || $attribute->type == 'boolean') {
                 continue;
             }
@@ -108,9 +116,17 @@ class ProductForm extends FormRequest
                 });
             }
 
+
+
             $this->rules[$attribute->code] = $validations;
+
+            
+
         }
 
+       
+        }
+    
         return $this->rules;
     }
 

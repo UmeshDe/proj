@@ -28,6 +28,7 @@ class Order extends Model implements OrderContract
         'canceled'        => 'Canceled',
         'closed'          => 'Closed',
         'fraud'           => 'Fraud',
+        'shipped'         => 'Shipped', 
     ];
 
     /**

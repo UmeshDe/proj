@@ -77,4 +77,17 @@ class OrderController extends Controller
 
         return redirect()->back();
     }
+
+    public function updateOrder($id)
+    {
+        $order = $this->orderRepository->findOrFail($id);
+        $data = request()->all();
+
+        $order->owner_comment = $data['owner_comment'];
+        $order->status = $data['status'];
+        $order->save();
+        
+
+        return view($this->_config['view'], compact('order'));
+    }
 }

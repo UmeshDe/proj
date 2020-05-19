@@ -329,6 +329,7 @@ return [
             'order-status-pending-payment' => 'Pending Payment',
             'order-status-processing' => 'Processing',
             'order-status-success' => 'Completed',
+            'order-status-shipped' => 'Shipped',
             'channel' => 'Channel',
             'customer-name' => 'Customer Name',
             'email' => 'Email',

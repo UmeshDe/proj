@@ -1,5 +1,4 @@
 <?php
-
 namespace Webkul\Admin\Http\Controllers\Sales;
 
 use Webkul\Admin\Http\Controllers\Controller;
@@ -101,20 +100,25 @@ class ShipmentController extends Controller
     {
         $order = $this->orderRepository->findOrFail($orderId);
 
+        // dd($order);
+
         if (! $order->canShip()) {
             session()->flash('error', trans('admin::app.sales.shipments.order-error'));
 
             return redirect()->back();
         }
 
+        // dd("kill");
+
         $this->validate(request(), [
-            'shipment.carrier_title' => 'required',
+            // 'shipment.carrier_title' => 'required',
             'shipment.track_number'  => 'required',
             'shipment.source'        => 'required',
             'shipment.items.*.*'     => 'required|numeric|min:0',
         ]);
 
         $data = request()->all();
+       
 
         if (! $this->isInventoryValidate($data)) {
             session()->flash('error', trans('admin::app.sales.shipments.quantity-invalid'));
@@ -122,7 +126,9 @@ class ShipmentController extends Controller
             return redirect()->back();
         }
 
-        $this->shipmentRepository->create(array_merge($data, ['order_id' => $orderId]));
+
+        $shipment = $this->shipmentRepository->create(array_merge($data, ['order_id' => $orderId]));
+    
 
         session()->flash('success', trans('admin::app.response.create-success', ['name' => 'Shipment']));
 

@@ -46,7 +46,7 @@
                             <div class="control-group">
                                 <?php $selectedOption = old('type') ?: $attribute->type ?>
                                 <label for="type">{{ __('admin::app.catalog.attributes.type') }}</label>
-                                <select class="control" id="type" disabled="disabled">
+                                <select class="control" id="type">
                                     <option value="text" {{ $selectedOption == 'text' ? 'selected' : '' }}>
                                         {{ __('admin::app.catalog.attributes.text') }}
                                     </option>

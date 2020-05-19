@@ -158,6 +158,7 @@ class ProductController extends Controller
 
         $product = $this->productRepository->create(request()->all());
 
+
         session()->flash('success', trans('admin::app.response.create-success', ['name' => 'Product']));
 
         return redirect()->route($this->_config['redirect'], ['id' => $product->id]);
@@ -189,7 +190,9 @@ class ProductController extends Controller
      */
     public function update(ProductForm $request, $id)
     {
+
         $product = $this->productRepository->update(request()->all(), $id);
+    
 
         session()->flash('success', trans('admin::app.response.update-success', ['name' => 'Product']));
 

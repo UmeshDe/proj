@@ -84,12 +84,13 @@ class ShipmentRepository extends Repository
             $shipment = $this->model->create([
                 'order_id'            => $order->id,
                 'total_qty'           => 0,
-                'carrier_title'       => $data['shipment']['carrier_title'],
+                'carrier_title'       => "NULL",
                 'track_number'        => $data['shipment']['track_number'],
                 'customer_id'         => $order->customer_id,
                 'customer_type'       => $order->customer_type,
                 'order_address_id'    => $order->shipping_address->id,
                 'inventory_source_id' => $data['shipment']['source'],
+                'delivery_note'       => $data['delivery_note'],
             ]);
 
             $totalQty = 0;
@@ -153,6 +154,7 @@ class ShipmentRepository extends Repository
             $shipment->update([
                 'total_qty'             => $totalQty,
                 'inventory_source_name' => $shipment->inventory_source->name,
+                // 'delivery_note'         => $data['delivery_note'],
             ]);
 
             $this->orderRepository->updateOrderStatus($order);

@@ -259,7 +259,7 @@
          <div class="control-group" :class="[errors.has('shipment[source]') ? 'has-error' : '']">
             <label for="shipment[source]" class="required">Delivery Note</label>
             <br>
-           <textarea cols=70 rows=10></textarea>
+           <textarea cols=70 rows=10 name='delivery_note'></textarea>
            
          </div>
 

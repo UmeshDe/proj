@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 11, 2020 at 03:31 PM
+-- Generation Time: May 19, 2020 at 09:10 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.28
 
@@ -168,17 +168,24 @@ INSERT INTO `attributes` (`id`, `code`, `admin_name`, `type`, `validation`, `pos
 (20, 'height', 'Height', 'text', 'decimal', 20, 0, 0, 0, 0, 0, 0, 1, 0, '2020-04-15 13:28:48', '2020-04-15 13:28:48', NULL, 1, 0),
 (21, 'depth', 'Depth', 'text', 'decimal', 21, 0, 0, 0, 0, 0, 0, 1, 0, '2020-04-15 13:28:48', '2020-04-15 13:28:48', NULL, 1, 0),
 (22, 'weight', 'Weight', 'text', 'decimal', 22, 1, 0, 0, 0, 0, 0, 0, 0, '2020-04-15 13:28:48', '2020-04-15 13:28:48', NULL, 1, 0),
-(23, 'color', 'Color', 'select', '', 23, 0, 0, 0, 0, 1, 1, 1, 0, '2020-04-15 13:28:48', '2020-04-19 05:49:46', NULL, 1, 0),
-(24, 'size', 'Size', 'select', NULL, 24, 0, 0, 0, 0, 1, 1, 1, 0, '2020-04-15 13:28:48', '2020-04-15 13:28:48', NULL, 1, 0),
+(23, 'color', 'Color', 'multiselect', NULL, 23, 0, 0, 0, 0, 1, 1, 1, 0, '2020-04-15 13:28:48', '2020-05-17 09:13:36', NULL, 1, 0),
+(24, 'size', 'Size', 'multiselect', NULL, 24, 0, 0, 0, 0, 1, 1, 1, 0, '2020-04-15 13:28:48', '2020-04-15 13:28:48', NULL, 1, 0),
 (25, 'brand', 'Brand', 'select', NULL, 25, 0, 0, 0, 0, 1, 0, 0, 1, '2020-04-15 13:28:48', '2020-04-15 13:28:48', NULL, 1, 0),
 (26, 'guest_checkout', 'Guest Checkout', 'boolean', NULL, 8, 1, 0, 0, 0, 0, 0, 0, 0, '2020-04-15 13:28:48', '2020-04-15 13:28:48', NULL, 1, 0),
 (27, 'productid', 'ProductID', 'text', '', NULL, 0, 1, 0, 0, 0, 0, 1, 0, '2020-05-03 07:31:16', '2020-05-03 07:31:16', NULL, 1, 0),
-(28, 'stockalertmessage', 'Stock Alert Message', 'select', '', NULL, 1, 0, 0, 0, 0, 0, 1, 0, '2020-05-10 11:03:10', '2020-05-10 11:03:10', 'dropdown', 1, 0),
-(29, 'position', 'Position', 'text', '', NULL, 1, 1, 0, 0, 0, 0, 1, 0, '2020-05-10 11:35:21', '2020-05-10 11:35:21', NULL, 1, 0),
+(28, 'stockalertmessage', 'Stock Alert Message', 'select', '', NULL, 0, 0, 0, 0, 0, 0, 1, 0, '2020-05-10 11:03:10', '2020-05-17 05:41:07', 'dropdown', 1, 0),
+(29, 'position', 'Position', 'text', '', NULL, 0, 0, 0, 0, 0, 0, 1, 0, '2020-05-10 11:35:21', '2020-05-17 10:18:29', NULL, 1, 0),
 (30, 'customsize', 'Custom Size', 'text', '', NULL, 1, 0, 0, 0, 0, 0, 1, 0, '2020-05-10 11:36:39', '2020-05-10 11:36:39', NULL, 1, 0),
 (31, 'videourl', 'Video URL', 'text', '', NULL, 0, 0, 0, 0, 0, 0, 1, 0, '2020-05-10 11:38:29', '2020-05-10 11:38:29', NULL, 1, 0),
 (32, 'unit', 'Unit', 'select', '', NULL, 1, 0, 0, 0, 0, 0, 1, 0, '2020-05-10 11:41:27', '2020-05-10 11:41:27', 'dropdown', 1, 0),
-(33, 'Glazed', 'Glazed', 'select', '', NULL, 1, 0, 0, 0, 0, 0, 1, 0, '2020-05-10 16:24:05', '2020-05-10 16:24:05', 'dropdown', 1, 0);
+(33, 'Glazed', 'Glazed', 'select', '', NULL, 1, 0, 0, 0, 0, 0, 1, 0, '2020-05-10 16:24:05', '2020-05-10 16:24:05', 'dropdown', 1, 0),
+(34, 'finish', 'Finish (Appearance)', 'text', '', NULL, 0, 0, 0, 0, 0, 0, 1, 0, '2020-05-17 10:03:11', '2020-05-17 10:03:11', NULL, 0, 0),
+(35, 'material', 'Material', 'text', '', NULL, 0, 0, 0, 0, 0, 0, 1, 1, '2020-05-17 10:04:29', '2020-05-17 10:04:29', NULL, 1, 0),
+(36, 'quantitypersqmeter', 'Quantity per Square Meter', 'text', '', NULL, 0, 0, 0, 0, 0, 0, 1, 1, '2020-05-17 10:06:25', '2020-05-17 10:06:25', NULL, 1, 0),
+(37, 'boxquantity', 'Box Quantity', 'text', '', NULL, 0, 0, 0, 0, 0, 0, 1, 1, '2020-05-17 10:07:31', '2020-05-17 10:07:31', NULL, 1, 0),
+(38, 'wastage', 'Wastage %', 'text', '', NULL, 0, 0, 0, 0, 0, 0, 1, 1, '2020-05-17 10:08:41', '2020-05-17 10:08:41', NULL, 1, 0),
+(39, 'usage', 'Usage', 'text', '', NULL, 0, 0, 0, 0, 0, 0, 1, 1, '2020-05-17 10:11:29', '2020-05-17 10:11:29', NULL, 1, 0),
+(40, 'recommended', 'Recommended Room', 'textarea', '', NULL, 0, 0, 0, 0, 0, 0, 1, 1, '2020-05-17 10:12:26', '2020-05-17 10:12:26', NULL, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -275,7 +282,14 @@ INSERT INTO `attribute_group_mappings` (`attribute_id`, `attribute_group_id`, `p
 (30, 1, 16),
 (31, 1, 17),
 (32, 4, 6),
-(33, 1, 18);
+(33, 1, 18),
+(34, 1, 19),
+(35, 1, 20),
+(36, 1, 21),
+(37, 1, 22),
+(38, 1, 23),
+(39, 1, 24),
+(40, 1, 25);
 
 -- --------------------------------------------------------
 
@@ -436,7 +450,28 @@ INSERT INTO `attribute_translations` (`id`, `locale`, `name`, `attribute_id`) VA
 (48, 'nl', '', 32),
 (49, 'en', 'Glazed', 33),
 (50, 'fr', '', 33),
-(51, 'nl', '', 33);
+(51, 'nl', '', 33),
+(52, 'en', 'Finish (Appearance)', 34),
+(53, 'fr', '', 34),
+(54, 'nl', '', 34),
+(55, 'en', 'Material', 35),
+(56, 'fr', '', 35),
+(57, 'nl', '', 35),
+(58, 'en', 'Quantity per Square Meter', 36),
+(59, 'fr', '', 36),
+(60, 'nl', '', 36),
+(61, 'en', 'Box Quantity', 37),
+(62, 'fr', '', 37),
+(63, 'nl', '', 37),
+(64, 'en', 'Wastage %', 38),
+(65, 'fr', '', 38),
+(66, 'nl', '', 38),
+(67, 'en', 'Usage', 39),
+(68, 'fr', '', 39),
+(69, 'nl', '', 39),
+(70, 'en', 'Recommended Room', 40),
+(71, 'fr', '', 40),
+(72, 'nl', '', 40);
 
 -- --------------------------------------------------------
 
@@ -614,7 +649,8 @@ INSERT INTO `cart` (`id`, `customer_email`, `customer_first_name`, `customer_las
 (1, 'umeshdevadiga555@gmail.com', 'Umesh', 'Devadiga', 'free_free', NULL, 0, 1, '2.0000', NULL, 'USD', 'USD', 'USD', 'USD', '1000.0000', '1000.0000', '1000.0000', '1000.0000', '0.0000', '0.0000', '0.0000', '0.0000', NULL, 0, 0, NULL, 1, 1, '2020-04-21 14:07:24', '2020-04-21 14:23:17', ''),
 (2, 'umeshdevadiga555@gmail.com', 'Umesh', 'Devadiga', 'free_free', NULL, 0, 1, '2.0000', NULL, 'GBP', 'GBP', 'GBP', 'GBP', '1000.0000', '1000.0000', '1000.0000', '1000.0000', '0.0000', '0.0000', '0.0000', '0.0000', NULL, 0, 0, NULL, 1, 1, '2020-05-10 12:18:27', '2020-05-10 12:21:48', ''),
 (3, 'umeshdevadiga555@gmail.com', 'Umesh', 'Devadiga', 'free_free', NULL, 0, 1, '1.0000', NULL, 'GBP', 'GBP', 'GBP', 'GBP', '500.0000', '500.0000', '500.0000', '500.0000', '0.0000', '0.0000', '0.0000', '0.0000', NULL, 0, 0, NULL, 1, 1, '2020-05-10 12:33:36', '2020-05-10 12:35:36', ''),
-(4, 'umeshdevadiga555@gmail.com', 'Umesh', 'Devadiga', 'free_free', NULL, 0, 1, '1.0000', NULL, 'GBP', 'GBP', 'GBP', 'GBP', '500.0000', '500.0000', '500.0000', '500.0000', '0.0000', '0.0000', '0.0000', '0.0000', NULL, 0, 0, NULL, 1, 1, '2020-05-10 16:40:59', '2020-05-10 16:45:43', '');
+(4, 'umeshdevadiga555@gmail.com', 'Umesh', 'Devadiga', 'free_free', NULL, 0, 1, '1.0000', NULL, 'GBP', 'GBP', 'GBP', 'GBP', '500.0000', '500.0000', '500.0000', '500.0000', '0.0000', '0.0000', '0.0000', '0.0000', NULL, 0, 0, NULL, 1, 1, '2020-05-10 16:40:59', '2020-05-10 16:45:43', ''),
+(5, 'umeshdevadiga555@gmail.com', 'Umesh', 'Devadiga', NULL, NULL, 0, 1, '1.0000', NULL, 'GBP', 'GBP', 'GBP', 'GBP', '500.0000', '500.0000', '500.0000', '500.0000', '0.0000', '0.0000', '0.0000', '0.0000', NULL, 0, 1, NULL, 1, 1, '2020-05-14 16:28:06', '2020-05-14 16:28:52', '');
 
 -- --------------------------------------------------------
 
@@ -702,7 +738,8 @@ INSERT INTO `cart_items` (`id`, `quantity`, `sku`, `type`, `name`, `coupon_code`
 (1, 2, '102', 'simple', 'XYZZ', NULL, '55.0000', '110.0000', '110.0000', '500.0000', '500.0000', '1000.0000', '1000.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '{\"quantity\":2,\"_token\":\"iJWc78e9AvwkW2qXQi3C7qKC9ng7OIkRGE938uj7\",\"product_id\":\"2\"}', NULL, 2, 1, NULL, '2020-04-21 14:07:25', '2020-04-21 14:23:15', NULL, ''),
 (2, 2, '102', 'simple', 'XYZZ', NULL, '55.0000', '110.0000', '110.0000', '500.0000', '500.0000', '1000.0000', '1000.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '{\"_token\":\"Uq4fgcQGnxLZFq87RyC2h5NMF0e6nfsdPd59BmV2\",\"product_id\":\"2\",\"quantity\":2}', NULL, 2, 2, NULL, '2020-05-10 12:18:28', '2020-05-10 12:21:45', NULL, ''),
 (3, 1, '102', 'simple', 'XYZZ', NULL, '55.0000', '55.0000', '55.0000', '500.0000', '500.0000', '500.0000', '500.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '{\"_token\":\"Uq4fgcQGnxLZFq87RyC2h5NMF0e6nfsdPd59BmV2\",\"product_id\":\"2\",\"quantity\":\"1\"}', NULL, 2, 3, NULL, '2020-05-10 12:33:36', '2020-05-10 12:35:34', NULL, ''),
-(4, 1, '102', 'simple', 'XYZZ', NULL, '55.0000', '55.0000', '55.0000', '500.0000', '500.0000', '500.0000', '500.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '{\"_token\":\"Uq4fgcQGnxLZFq87RyC2h5NMF0e6nfsdPd59BmV2\",\"product_id\":\"2\",\"quantity\":\"1\"}', NULL, 2, 4, NULL, '2020-05-10 16:41:00', '2020-05-10 16:45:40', NULL, '');
+(4, 1, '102', 'simple', 'XYZZ', NULL, '55.0000', '55.0000', '55.0000', '500.0000', '500.0000', '500.0000', '500.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '{\"_token\":\"Uq4fgcQGnxLZFq87RyC2h5NMF0e6nfsdPd59BmV2\",\"product_id\":\"2\",\"quantity\":\"1\"}', NULL, 2, 4, NULL, '2020-05-10 16:41:00', '2020-05-10 16:45:40', NULL, ''),
+(5, 1, '102', 'simple', 'XYZZ', NULL, '55.0000', '55.0000', '55.0000', '500.0000', '500.0000', '500.0000', '500.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '{\"_token\":\"LwevSi8WcG1XJAV8ojNs8s3381CP1JbTk7cGII5z\",\"product_id\":\"2\",\"quantity\":\"1\"}', NULL, 2, 5, NULL, '2020-05-14 16:28:07', '2020-05-14 16:28:31', NULL, '');
 
 -- --------------------------------------------------------
 
@@ -5292,6 +5329,7 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 CREATE TABLE `orders` (
   `id` int(10) UNSIGNED NOT NULL,
   `increment_id` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `owner_comment` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `status` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `channel_name` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `is_guest` tinyint(1) DEFAULT NULL,
@@ -5357,11 +5395,11 @@ CREATE TABLE `orders` (
 -- Dumping data for table `orders`
 --
 
-INSERT INTO `orders` (`id`, `increment_id`, `status`, `channel_name`, `is_guest`, `customer_email`, `customer_first_name`, `customer_last_name`, `customer_company_name`, `customer_vat_id`, `shipping_method`, `shipping_title`, `shipping_description`, `coupon_code`, `is_gift`, `total_item_count`, `total_qty_ordered`, `base_currency_code`, `channel_currency_code`, `order_currency_code`, `grand_total`, `base_grand_total`, `grand_total_invoiced`, `base_grand_total_invoiced`, `grand_total_refunded`, `base_grand_total_refunded`, `sub_total`, `base_sub_total`, `sub_total_invoiced`, `base_sub_total_invoiced`, `sub_total_refunded`, `base_sub_total_refunded`, `discount_percent`, `discount_amount`, `base_discount_amount`, `discount_invoiced`, `base_discount_invoiced`, `discount_refunded`, `base_discount_refunded`, `tax_amount`, `base_tax_amount`, `tax_amount_invoiced`, `base_tax_amount_invoiced`, `tax_amount_refunded`, `base_tax_amount_refunded`, `shipping_amount`, `base_shipping_amount`, `shipping_invoiced`, `base_shipping_invoiced`, `shipping_refunded`, `base_shipping_refunded`, `customer_id`, `customer_type`, `channel_id`, `channel_type`, `created_at`, `updated_at`, `cart_id`, `applied_cart_rule_ids`, `shipping_discount_amount`, `base_shipping_discount_amount`) VALUES
-(1, '1', 'completed', 'Default', 0, 'umeshdevadiga555@gmail.com', 'Umesh', 'Devadiga', NULL, NULL, 'free_free', 'Free Shipping - Free Shipping', 'Free Shipping', NULL, 0, 1, 2, 'USD', 'USD', 'USD', '1000.0000', '1000.0000', '1000.0000', '1000.0000', '0.0000', '0.0000', '1000.0000', '1000.0000', '1000.0000', '1000.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', 1, 'Webkul\\Customer\\Models\\Customer', 1, 'Webkul\\Core\\Models\\Channel', '2020-04-21 14:23:16', '2020-04-21 14:28:35', 1, '', '0.0000', '0.0000'),
-(2, '2', 'processing', 'Default', 0, 'umeshdevadiga555@gmail.com', 'Umesh', 'Devadiga', NULL, NULL, 'free_free', 'Free Shipping - Free Shipping', 'Free Shipping', NULL, 0, 1, 2, 'GBP', 'GBP', 'GBP', '1000.0000', '1000.0000', '1000.0000', '1000.0000', '0.0000', '0.0000', '1000.0000', '1000.0000', '1000.0000', '1000.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', 1, 'Webkul\\Customer\\Models\\Customer', 1, 'Webkul\\Core\\Models\\Channel', '2020-05-10 12:21:46', '2020-05-10 13:49:55', 2, '', '0.0000', '0.0000'),
-(3, '3', 'pending', 'Default', 0, 'umeshdevadiga555@gmail.com', 'Umesh', 'Devadiga', NULL, NULL, 'free_free', 'Free Shipping - Free Shipping', 'Free Shipping', NULL, 0, 1, 1, 'GBP', 'GBP', 'GBP', '500.0000', '500.0000', '0.0000', '0.0000', '0.0000', '0.0000', '500.0000', '500.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', 1, 'Webkul\\Customer\\Models\\Customer', 1, 'Webkul\\Core\\Models\\Channel', '2020-05-10 12:35:35', '2020-05-10 12:35:35', 3, '', '0.0000', '0.0000'),
-(4, '4', 'pending', 'Default', 0, 'umeshdevadiga555@gmail.com', 'Umesh', 'Devadiga', NULL, NULL, 'free_free', 'Free Shipping - Free Shipping', 'Free Shipping', NULL, 0, 1, 1, 'GBP', 'GBP', 'GBP', '500.0000', '500.0000', '0.0000', '0.0000', '0.0000', '0.0000', '500.0000', '500.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', 1, 'Webkul\\Customer\\Models\\Customer', 1, 'Webkul\\Core\\Models\\Channel', '2020-05-10 16:45:41', '2020-05-10 16:45:41', 4, '', '0.0000', '0.0000');
+INSERT INTO `orders` (`id`, `increment_id`, `owner_comment`, `status`, `channel_name`, `is_guest`, `customer_email`, `customer_first_name`, `customer_last_name`, `customer_company_name`, `customer_vat_id`, `shipping_method`, `shipping_title`, `shipping_description`, `coupon_code`, `is_gift`, `total_item_count`, `total_qty_ordered`, `base_currency_code`, `channel_currency_code`, `order_currency_code`, `grand_total`, `base_grand_total`, `grand_total_invoiced`, `base_grand_total_invoiced`, `grand_total_refunded`, `base_grand_total_refunded`, `sub_total`, `base_sub_total`, `sub_total_invoiced`, `base_sub_total_invoiced`, `sub_total_refunded`, `base_sub_total_refunded`, `discount_percent`, `discount_amount`, `base_discount_amount`, `discount_invoiced`, `base_discount_invoiced`, `discount_refunded`, `base_discount_refunded`, `tax_amount`, `base_tax_amount`, `tax_amount_invoiced`, `base_tax_amount_invoiced`, `tax_amount_refunded`, `base_tax_amount_refunded`, `shipping_amount`, `base_shipping_amount`, `shipping_invoiced`, `base_shipping_invoiced`, `shipping_refunded`, `base_shipping_refunded`, `customer_id`, `customer_type`, `channel_id`, `channel_type`, `created_at`, `updated_at`, `cart_id`, `applied_cart_rule_ids`, `shipping_discount_amount`, `base_shipping_discount_amount`) VALUES
+(1, '1', NULL, 'completed', 'Default', 0, 'umeshdevadiga555@gmail.com', 'Umesh', 'Devadiga', NULL, NULL, 'free_free', 'Free Shipping - Free Shipping', 'Free Shipping', NULL, 0, 1, 2, 'USD', 'USD', 'USD', '1000.0000', '1000.0000', '1000.0000', '1000.0000', '0.0000', '0.0000', '1000.0000', '1000.0000', '1000.0000', '1000.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', 1, 'Webkul\\Customer\\Models\\Customer', 1, 'Webkul\\Core\\Models\\Channel', '2020-04-21 14:23:16', '2020-04-21 14:28:35', 1, '', '0.0000', '0.0000'),
+(2, '2', 'PPPPPPPPPPPPPPPP', 'completed', 'Default', 0, 'umeshdevadiga555@gmail.com', 'Umesh', 'Devadiga', NULL, NULL, 'free_free', 'Free Shipping - Free Shipping', 'Free Shipping', NULL, 0, 1, 2, 'GBP', 'GBP', 'GBP', '1000.0000', '1000.0000', '1000.0000', '1000.0000', '0.0000', '0.0000', '1000.0000', '1000.0000', '1000.0000', '1000.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', 1, 'Webkul\\Customer\\Models\\Customer', 1, 'Webkul\\Core\\Models\\Channel', '2020-05-10 12:21:46', '2020-05-16 14:34:54', 2, '', '0.0000', '0.0000'),
+(3, '3', 'POP', 'processing', 'Default', 0, 'umeshdevadiga555@gmail.com', 'Umesh', 'Devadiga', NULL, NULL, 'free_free', 'Free Shipping - Free Shipping', 'Free Shipping', NULL, 0, 1, 1, 'GBP', 'GBP', 'GBP', '500.0000', '500.0000', '0.0000', '0.0000', '0.0000', '0.0000', '500.0000', '500.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', 1, 'Webkul\\Customer\\Models\\Customer', 1, 'Webkul\\Core\\Models\\Channel', '2020-05-10 12:35:35', '2020-05-16 14:39:28', 3, '', '0.0000', '0.0000'),
+(4, '4', 'PJPJPJJ', 'processing', 'Default', 0, 'umeshdevadiga555@gmail.com', 'Umesh', 'Devadiga', NULL, NULL, 'free_free', 'Free Shipping - Free Shipping', 'Free Shipping', NULL, 0, 1, 1, 'GBP', 'GBP', 'GBP', '500.0000', '500.0000', '0.0000', '0.0000', '0.0000', '0.0000', '500.0000', '500.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', 1, 'Webkul\\Customer\\Models\\Customer', 1, 'Webkul\\Core\\Models\\Channel', '2020-05-10 16:45:41', '2020-05-16 14:42:36', 4, '', '0.0000', '0.0000');
 
 -- --------------------------------------------------------
 
@@ -5486,9 +5524,9 @@ CREATE TABLE `order_items` (
 
 INSERT INTO `order_items` (`id`, `sku`, `type`, `name`, `coupon_code`, `weight`, `total_weight`, `qty_ordered`, `qty_shipped`, `qty_invoiced`, `qty_canceled`, `qty_refunded`, `price`, `base_price`, `total`, `base_total`, `total_invoiced`, `base_total_invoiced`, `amount_refunded`, `base_amount_refunded`, `discount_percent`, `discount_amount`, `base_discount_amount`, `discount_invoiced`, `base_discount_invoiced`, `discount_refunded`, `base_discount_refunded`, `tax_percent`, `tax_amount`, `base_tax_amount`, `tax_amount_invoiced`, `base_tax_amount_invoiced`, `tax_amount_refunded`, `base_tax_amount_refunded`, `product_id`, `product_type`, `order_id`, `parent_id`, `additional`, `created_at`, `updated_at`) VALUES
 (1, '102', 'simple', 'XYZZ', NULL, '55.0000', '110.0000', 2, 2, 2, 0, 0, '500.0000', '500.0000', '1000.0000', '1000.0000', '1000.0000', '1000.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', 2, 'Webkul\\Product\\Models\\Product', 1, NULL, '{\"quantity\":2,\"_token\":\"iJWc78e9AvwkW2qXQi3C7qKC9ng7OIkRGE938uj7\",\"product_id\":\"2\"}', '2020-04-21 14:23:16', '2020-04-21 14:28:35'),
-(2, '102', 'simple', 'XYZZ', NULL, '55.0000', '110.0000', 2, 0, 2, 0, 0, '500.0000', '500.0000', '1000.0000', '1000.0000', '1000.0000', '1000.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', 2, 'Webkul\\Product\\Models\\Product', 2, NULL, '{\"_token\":\"Uq4fgcQGnxLZFq87RyC2h5NMF0e6nfsdPd59BmV2\",\"product_id\":\"2\",\"quantity\":2}', '2020-05-10 12:21:46', '2020-05-10 13:49:55'),
-(3, '102', 'simple', 'XYZZ', NULL, '55.0000', '55.0000', 1, 0, 0, 0, 0, '500.0000', '500.0000', '500.0000', '500.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', 2, 'Webkul\\Product\\Models\\Product', 3, NULL, '{\"_token\":\"Uq4fgcQGnxLZFq87RyC2h5NMF0e6nfsdPd59BmV2\",\"product_id\":\"2\",\"quantity\":\"1\"}', '2020-05-10 12:35:35', '2020-05-10 12:35:35'),
-(4, '102', 'simple', 'XYZZ', NULL, '55.0000', '55.0000', 1, 0, 0, 0, 0, '500.0000', '500.0000', '500.0000', '500.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', 2, 'Webkul\\Product\\Models\\Product', 4, NULL, '{\"_token\":\"Uq4fgcQGnxLZFq87RyC2h5NMF0e6nfsdPd59BmV2\",\"product_id\":\"2\",\"quantity\":\"1\"}', '2020-05-10 16:45:41', '2020-05-10 16:45:41');
+(2, '102', 'simple', 'XYZZ', NULL, '55.0000', '110.0000', 2, 2, 2, 0, 0, '500.0000', '500.0000', '1000.0000', '1000.0000', '1000.0000', '1000.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', 2, 'Webkul\\Product\\Models\\Product', 2, NULL, '{\"_token\":\"Uq4fgcQGnxLZFq87RyC2h5NMF0e6nfsdPd59BmV2\",\"product_id\":\"2\",\"quantity\":2}', '2020-05-10 12:21:46', '2020-05-16 14:34:53'),
+(3, '102', 'simple', 'XYZZ', NULL, '55.0000', '55.0000', 1, 1, 0, 0, 0, '500.0000', '500.0000', '500.0000', '500.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', 2, 'Webkul\\Product\\Models\\Product', 3, NULL, '{\"_token\":\"Uq4fgcQGnxLZFq87RyC2h5NMF0e6nfsdPd59BmV2\",\"product_id\":\"2\",\"quantity\":\"1\"}', '2020-05-10 12:35:35', '2020-05-16 14:40:11'),
+(4, '102', 'simple', 'XYZZ', NULL, '55.0000', '55.0000', 1, 1, 0, 0, 0, '500.0000', '500.0000', '500.0000', '500.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', '0.0000', 2, 'Webkul\\Product\\Models\\Product', 4, NULL, '{\"_token\":\"Uq4fgcQGnxLZFq87RyC2h5NMF0e6nfsdPd59BmV2\",\"product_id\":\"2\",\"quantity\":\"1\"}', '2020-05-10 16:45:41', '2020-05-16 14:43:26');
 
 -- --------------------------------------------------------
 
@@ -5553,7 +5591,12 @@ INSERT INTO `products` (`id`, `sku`, `type`, `created_at`, `updated_at`, `parent
 (3, '104', 'simple', '2020-04-19 05:40:00', '2020-04-19 05:40:00', NULL, 1),
 (4, '098', 'simple', '2020-05-01 17:33:49', '2020-05-01 17:33:49', NULL, 1),
 (5, '89', 'simple', '2020-05-02 09:39:44', '2020-05-02 09:39:44', NULL, 1),
-(6, '965', 'simple', '2020-05-02 10:05:09', '2020-05-02 10:05:09', NULL, 1);
+(6, '965', 'simple', '2020-05-02 10:05:09', '2020-05-02 10:05:09', NULL, 1),
+(7, '565363', 'simple', '2020-05-14 16:20:59', '2020-05-14 16:20:59', NULL, 1),
+(8, '565335', 'simple', '2020-05-16 13:25:07', '2020-05-16 13:25:07', NULL, 1),
+(9, '9090', 'simple', '2020-05-16 16:27:45', '2020-05-16 16:27:45', NULL, 1),
+(10, '76543', 'simple', '2020-05-17 09:15:39', '2020-05-17 09:15:39', NULL, 1),
+(11, '655656', 'simple', '2020-05-17 11:10:58', '2020-05-17 11:10:58', NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -5591,8 +5634,8 @@ INSERT INTO `product_attribute_values` (`id`, `locale`, `channel`, `text_value`,
 (8, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, 2, 6),
 (9, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, 2, 7),
 (10, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, 2, 8),
-(11, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, 2, 23),
-(12, NULL, NULL, NULL, NULL, 6, NULL, NULL, NULL, NULL, 2, 24),
+(11, NULL, NULL, '1,2,3', NULL, 1, NULL, NULL, NULL, NULL, 2, 23),
+(12, NULL, NULL, '6,7,8', NULL, 6, NULL, NULL, NULL, NULL, 2, 24),
 (13, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, 2, 26),
 (14, 'en', 'default', 'fqbfhj', NULL, NULL, NULL, NULL, NULL, NULL, 2, 16),
 (15, 'en', 'default', 'hbjbjhb', NULL, NULL, NULL, NULL, NULL, NULL, 2, 17),
@@ -5605,7 +5648,75 @@ INSERT INTO `product_attribute_values` (`id`, `locale`, `channel`, `text_value`,
 (22, NULL, NULL, '5', NULL, NULL, NULL, NULL, NULL, NULL, 2, 19),
 (23, NULL, NULL, '55', NULL, NULL, NULL, NULL, NULL, NULL, 2, 20),
 (24, NULL, NULL, '5', NULL, NULL, NULL, NULL, NULL, NULL, 2, 21),
-(25, NULL, NULL, '55', NULL, NULL, NULL, NULL, NULL, NULL, 2, 22);
+(25, NULL, NULL, '55', NULL, NULL, NULL, NULL, NULL, NULL, 2, 22),
+(26, NULL, NULL, '2', NULL, NULL, NULL, NULL, NULL, NULL, 2, 27),
+(27, NULL, NULL, NULL, NULL, 11, NULL, NULL, NULL, NULL, 2, 28),
+(28, NULL, NULL, '8', NULL, NULL, NULL, NULL, NULL, NULL, 2, 29),
+(29, NULL, NULL, '454', NULL, NULL, NULL, NULL, NULL, NULL, 2, 30),
+(30, NULL, NULL, 'google.com', NULL, NULL, NULL, NULL, NULL, NULL, 2, 31),
+(31, NULL, NULL, NULL, NULL, 14, NULL, NULL, NULL, NULL, 2, 33),
+(32, NULL, NULL, NULL, NULL, 13, NULL, NULL, NULL, NULL, 2, 32),
+(33, 'en', 'default', '<p>SDFGSDF</p>', NULL, NULL, NULL, NULL, NULL, NULL, 9, 9),
+(34, 'en', 'default', '<p>dsfgdsg</p>', NULL, NULL, NULL, NULL, NULL, NULL, 9, 10),
+(35, NULL, NULL, '9090', NULL, NULL, NULL, NULL, NULL, NULL, 9, 1),
+(36, 'en', 'default', 'dddkkll', NULL, NULL, NULL, NULL, NULL, NULL, 9, 2),
+(37, NULL, NULL, 'dddkkll', NULL, NULL, NULL, NULL, NULL, NULL, 9, 3),
+(38, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, 9, 5),
+(39, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, 9, 6),
+(40, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, 9, 7),
+(41, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, 9, 8),
+(42, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, 9, 23),
+(43, NULL, NULL, NULL, NULL, 6, NULL, NULL, NULL, NULL, 9, 24),
+(44, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, 9, 26),
+(45, NULL, NULL, '9', NULL, NULL, NULL, NULL, NULL, NULL, 9, 27),
+(46, NULL, NULL, NULL, NULL, 11, NULL, NULL, NULL, NULL, 9, 28),
+(47, NULL, NULL, '6', NULL, NULL, NULL, NULL, NULL, NULL, 9, 29),
+(48, NULL, NULL, '54', NULL, NULL, NULL, NULL, NULL, NULL, 9, 30),
+(49, NULL, NULL, 'www.google.com', NULL, NULL, NULL, NULL, NULL, NULL, 9, 31),
+(50, NULL, NULL, NULL, NULL, 14, NULL, NULL, NULL, NULL, 9, 33),
+(51, 'en', 'default', 'GFDSG', NULL, NULL, NULL, NULL, NULL, NULL, 9, 16),
+(52, 'en', 'default', 'GFSD', NULL, NULL, NULL, NULL, NULL, NULL, 9, 17),
+(53, 'en', 'default', 'dfhg', NULL, NULL, NULL, NULL, NULL, NULL, 9, 18),
+(54, NULL, NULL, NULL, NULL, NULL, '45.0000', NULL, NULL, NULL, 9, 11),
+(55, NULL, 'default', NULL, NULL, NULL, '4545.0000', NULL, NULL, NULL, 9, 12),
+(56, NULL, NULL, NULL, NULL, NULL, '4.0000', NULL, NULL, NULL, 9, 13),
+(57, NULL, 'default', NULL, NULL, NULL, NULL, NULL, '2020-06-05', NULL, 9, 14),
+(58, NULL, 'default', NULL, NULL, NULL, NULL, NULL, '2020-06-06', NULL, 9, 15),
+(59, NULL, NULL, NULL, NULL, 13, NULL, NULL, NULL, NULL, 9, 32),
+(60, 'en', 'default', '<p>hgd</p>', NULL, NULL, NULL, NULL, NULL, NULL, 11, 9),
+(61, 'en', 'default', '<p>hgdf</p>', NULL, NULL, NULL, NULL, NULL, NULL, 11, 10),
+(62, NULL, NULL, '655656', NULL, NULL, NULL, NULL, NULL, NULL, 11, 1),
+(63, 'en', 'default', 'txt', NULL, NULL, NULL, NULL, NULL, NULL, 11, 2),
+(64, NULL, NULL, 'txt', NULL, NULL, NULL, NULL, NULL, NULL, 11, 3),
+(65, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, 11, 5),
+(66, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, 11, 6),
+(67, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, 11, 7),
+(68, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, 11, 8),
+(69, NULL, NULL, '2,3,4', NULL, NULL, NULL, NULL, NULL, NULL, 11, 23),
+(70, NULL, NULL, '7,8,9', NULL, NULL, NULL, NULL, NULL, NULL, 11, 24),
+(71, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, 11, 26),
+(72, NULL, NULL, '14', NULL, NULL, NULL, NULL, NULL, NULL, 11, 27),
+(73, NULL, NULL, NULL, NULL, 11, NULL, NULL, NULL, NULL, 11, 28),
+(74, NULL, NULL, '90089', NULL, NULL, NULL, NULL, NULL, NULL, 11, 29),
+(75, NULL, NULL, '45', NULL, NULL, NULL, NULL, NULL, NULL, 11, 30),
+(76, NULL, NULL, 'google.com', NULL, NULL, NULL, NULL, NULL, NULL, 11, 31),
+(77, NULL, NULL, NULL, NULL, 14, NULL, NULL, NULL, NULL, 11, 33),
+(78, NULL, NULL, 'Natural Stone', NULL, NULL, NULL, NULL, NULL, NULL, 11, 34),
+(79, NULL, NULL, 'Sand Stone', NULL, NULL, NULL, NULL, NULL, NULL, 11, 35),
+(80, NULL, NULL, '8.66', NULL, NULL, NULL, NULL, NULL, NULL, 11, 36),
+(81, NULL, NULL, '5', NULL, NULL, NULL, NULL, NULL, NULL, 11, 37),
+(82, NULL, NULL, '64', NULL, NULL, NULL, NULL, NULL, NULL, 11, 38),
+(83, NULL, NULL, 'Wall', NULL, NULL, NULL, NULL, NULL, NULL, 11, 39),
+(84, NULL, NULL, 'GOOOOOOOOOOOOOF', NULL, NULL, NULL, NULL, NULL, NULL, 11, 40),
+(85, 'en', 'default', 'ghgdf', NULL, NULL, NULL, NULL, NULL, NULL, 11, 16),
+(86, 'en', 'default', 'jhkjh', NULL, NULL, NULL, NULL, NULL, NULL, 11, 17),
+(87, 'en', 'default', 'jhjkk', NULL, NULL, NULL, NULL, NULL, NULL, 11, 18),
+(88, NULL, NULL, NULL, NULL, NULL, '500.0000', NULL, NULL, NULL, 11, 11),
+(89, NULL, 'default', NULL, NULL, NULL, '450.0000', NULL, NULL, NULL, 11, 12),
+(90, NULL, NULL, NULL, NULL, NULL, '7.0000', NULL, NULL, NULL, 11, 13),
+(91, NULL, 'default', NULL, NULL, NULL, NULL, NULL, '2020-05-21', NULL, 11, 14),
+(92, NULL, 'default', NULL, NULL, NULL, NULL, NULL, '2020-05-29', NULL, 11, 15),
+(93, NULL, NULL, NULL, NULL, 13, NULL, NULL, NULL, NULL, 11, 32);
 
 -- --------------------------------------------------------
 
@@ -5666,7 +5777,9 @@ CREATE TABLE `product_categories` (
 --
 
 INSERT INTO `product_categories` (`product_id`, `category_id`) VALUES
-(2, 2);
+(2, 2),
+(9, 2),
+(11, 2);
 
 -- --------------------------------------------------------
 
@@ -5798,20 +5911,31 @@ CREATE TABLE `product_flat` (
   `unit` int(11) DEFAULT NULL,
   `unit_label` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `Glazed` int(11) DEFAULT NULL,
-  `Glazed_label` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+  `Glazed_label` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `material` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `quantitypersqmeter` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `boxquantity` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `wastage` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `usage` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `recommended` text COLLATE utf8mb4_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
 
 --
 -- Dumping data for table `product_flat`
 --
 
-INSERT INTO `product_flat` (`id`, `sku`, `name`, `description`, `url_key`, `new`, `featured`, `status`, `thumbnail`, `price`, `cost`, `special_price`, `special_price_from`, `special_price_to`, `weight`, `color`, `color_label`, `size`, `size_label`, `created_at`, `locale`, `channel`, `product_id`, `updated_at`, `parent_id`, `visible_individually`, `min_price`, `max_price`, `short_description`, `meta_title`, `meta_keywords`, `meta_description`, `width`, `height`, `depth`, `productid`, `stockalertmessage`, `stockalertmessage_label`, `position`, `customsize`, `videourl`, `unit`, `unit_label`, `Glazed`, `Glazed_label`) VALUES
-(1, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-04-18 15:26:17', 'en', 'default', 1, '2020-04-18 15:26:17', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(2, '102', 'XYZZ', '<p>bfwqbrbww</p>', 'xyzz', 1, 1, 1, NULL, '500.0000', '560.0000', '457.0000', '2020-04-29', '2020-04-30', '55.0000', 1, 'Red', 6, 'S', '2020-04-18 15:33:35', 'en', 'default', 2, '2020-04-18 15:33:35', NULL, 1, '500.0000', '500.0000', '<p>Ncejnfjkffhkf</p>', 'fqbfhj', 'hbjbjhb', 'nfne', '5.0000', '55.0000', '5.0000', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(3, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-04-19 11:10:00', 'en', 'default', 3, '2020-04-19 11:10:00', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(4, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-05-01 23:03:49', 'en', 'default', 4, '2020-05-01 23:03:49', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(5, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-05-02 15:09:44', 'en', 'default', 5, '2020-05-02 15:09:44', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(6, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-05-02 15:35:09', 'en', 'default', 6, '2020-05-02 15:35:09', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `product_flat` (`id`, `sku`, `name`, `description`, `url_key`, `new`, `featured`, `status`, `thumbnail`, `price`, `cost`, `special_price`, `special_price_from`, `special_price_to`, `weight`, `color`, `color_label`, `size`, `size_label`, `created_at`, `locale`, `channel`, `product_id`, `updated_at`, `parent_id`, `visible_individually`, `min_price`, `max_price`, `short_description`, `meta_title`, `meta_keywords`, `meta_description`, `width`, `height`, `depth`, `productid`, `stockalertmessage`, `stockalertmessage_label`, `position`, `customsize`, `videourl`, `unit`, `unit_label`, `Glazed`, `Glazed_label`, `material`, `quantitypersqmeter`, `boxquantity`, `wastage`, `usage`, `recommended`) VALUES
+(1, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-04-18 15:26:17', 'en', 'default', 1, '2020-04-18 15:26:17', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(2, '102', 'XYZZ', '<p>bfwqbrbww</p>', 'xyzz', 1, 1, 1, NULL, '500.0000', '560.0000', '457.0000', '2020-04-29', '2020-04-30', '55.0000', 1, 'Red, Green, Yellow', 6, 'S, M, L', '2020-04-18 15:33:35', 'en', 'default', 2, '2020-04-18 15:33:35', NULL, 1, '500.0000', '500.0000', '<p>Ncejnfjkffhkf</p>', 'fqbfhj', 'hbjbjhb', 'nfne', '5.0000', '55.0000', '5.0000', '2', 11, 'Premium', '8', '454', 'google.com', 13, 'per m2', 14, 'Yes', NULL, NULL, NULL, NULL, NULL, NULL),
+(3, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-04-19 11:10:00', 'en', 'default', 3, '2020-04-19 11:10:00', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(4, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-05-01 23:03:49', 'en', 'default', 4, '2020-05-01 23:03:49', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(5, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-05-02 15:09:44', 'en', 'default', 5, '2020-05-02 15:09:44', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(6, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-05-02 15:35:09', 'en', 'default', 6, '2020-05-02 15:35:09', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(7, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-05-14 21:50:59', 'en', 'default', 7, '2020-05-14 21:50:59', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(8, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-05-16 18:55:07', 'en', 'default', 8, '2020-05-16 18:55:07', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(9, '9090', 'dddkkll', '<p>dsfgdsg</p>', 'dddkkll', 1, 1, 1, NULL, '45.0000', '4545.0000', '4.0000', '2020-06-05', '2020-06-06', NULL, 1, 'Red', 6, 'S', '2020-05-16 21:57:45', 'en', 'default', 9, '2020-05-16 21:57:45', NULL, 1, '45.0000', '45.0000', '<p>SDFGSDF</p>', 'GFDSG', 'GFSD', 'dfhg', NULL, NULL, NULL, '9', 11, 'Premium', '6', '54', 'www.google.com', 13, 'per m2', 14, 'Yes', NULL, NULL, NULL, NULL, NULL, NULL),
+(10, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '2020-05-17 14:45:39', 'en', 'default', 10, '2020-05-17 14:45:39', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(11, '655656', 'txt', '<p>hgdf</p>', 'txt', 1, 1, 0, NULL, '500.0000', '450.0000', '7.0000', '2020-05-21', '2020-05-29', NULL, 2, 'Green, Yellow, Black', 7, 'M, L, XL', '2020-05-17 16:40:58', 'en', 'default', 11, '2020-05-17 16:40:58', NULL, 0, '500.0000', '500.0000', '<p>hgd</p>', 'ghgdf', 'jhkjh', 'jhjkk', NULL, NULL, NULL, '14', 11, 'Premium', '90089', '45', 'google.com', 13, 'per m2', 14, 'Yes', 'Sand Stone', '8.66', '5', '64', 'Wall', 'GOOOOOOOOOOOOOF');
 
 -- --------------------------------------------------------
 
@@ -5845,7 +5969,9 @@ CREATE TABLE `product_images` (
 --
 
 INSERT INTO `product_images` (`id`, `type`, `path`, `product_id`) VALUES
-(1, NULL, 'product/2/93QejUHzRv75nJoJmXT142HrduKaRiuKwLdbp7Wo.png', 2);
+(1, NULL, 'product/2/93QejUHzRv75nJoJmXT142HrduKaRiuKwLdbp7Wo.png', 2),
+(2, NULL, 'product/9/9ihDYDN14D3wLrgQTVN2f0GYxNc3n60g8XtBYUNy.jpeg', 9),
+(3, NULL, 'product/11/kbERPqdhijuZNhBWBOJAsfenKGCZDstzuIVLgSNg.jpeg', 11);
 
 -- --------------------------------------------------------
 
@@ -5866,7 +5992,9 @@ CREATE TABLE `product_inventories` (
 --
 
 INSERT INTO `product_inventories` (`id`, `qty`, `product_id`, `inventory_source_id`, `vendor_id`) VALUES
-(1, 18, 2, 1, 0);
+(1, 14, 2, 1, 0),
+(2, 25, 9, 1, 0),
+(3, 10, 11, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -5886,7 +6014,7 @@ CREATE TABLE `product_ordered_inventories` (
 --
 
 INSERT INTO `product_ordered_inventories` (`id`, `qty`, `product_id`, `channel_id`) VALUES
-(1, 4, 2, 1);
+(1, 0, 2, 1);
 
 -- --------------------------------------------------------
 
@@ -6027,7 +6155,7 @@ CREATE TABLE `roles` (
 --
 
 INSERT INTO `roles` (`id`, `name`, `description`, `permission_type`, `permissions`, `created_at`, `updated_at`) VALUES
-(1, 'Administrator', 'Administrator rolem', 'custom', '[\"dashboard\",\"sales\",\"sales.orders\",\"sales.invoices\",\"sales.shipments\",\"catalog\",\"catalog.products\",\"catalog.products.create\",\"catalog.products.edit\",\"catalog.products.delete\",\"catalog.categories\",\"catalog.categories.create\",\"catalog.categories.edit\",\"catalog.categories.delete\",\"catalog.attributes\",\"catalog.attributes.create\",\"catalog.attributes.edit\",\"catalog.attributes.delete\",\"catalog.families\",\"catalog.families.create\",\"catalog.families.edit\",\"catalog.families.delete\",\"customers\",\"customers.customers\",\"customers.customers.create\",\"customers.customers.edit\",\"customers.customers.delete\",\"customers.groups\",\"customers.groups.create\",\"customers.groups.edit\",\"customers.groups.delete\",\"customers.reviews\",\"customers.reviews.edit\",\"customers.reviews.delete\",\"configuration\",\"settings\",\"settings.locales\",\"settings.locales.create\",\"settings.locales.edit\",\"settings.locales.delete\",\"settings.currencies\",\"settings.currencies.create\",\"settings.currencies.edit\",\"settings.currencies.delete\",\"settings.exchange_rates\",\"settings.exchange_rates.create\",\"settings.exchange_rates.edit\",\"settings.exchange_rates.delete\",\"settings.inventory_sources\",\"settings.inventory_sources.create\",\"settings.inventory_sources.edit\",\"settings.inventory_sources.delete\",\"settings.channels\",\"settings.channels.create\",\"settings.channels.edit\",\"settings.channels.delete\",\"settings.users\",\"settings.users.users\",\"settings.users.users.create\",\"settings.users.users.edit\",\"settings.users.users.delete\",\"settings.users.roles\",\"settings.users.roles.create\",\"settings.users.roles.edit\",\"settings.users.roles.delete\",\"settings.sliders\",\"settings.sliders.create\",\"settings.sliders.edit\",\"settings.sliders.delete\",\"settings.taxes\",\"settings.taxes.tax-categories\",\"settings.taxes.tax-categories.create\",\"settings.taxes.tax-categories.edit\",\"settings.taxes.tax-categories.delete\",\"settings.taxes.tax-rates\",\"settings.taxes.tax-rates.create\",\"settings.taxes.tax-rates.edit\",\"settings.taxes.tax-rates.delete\",\"promotions\",\"promotions.cart-rules\",\"promotions.cart-rules.create\",\"promotions.cart-rules.edit\",\"promotions.cart-rules.delete\"]', NULL, '2020-05-02 09:53:45');
+(1, 'Administrator', 'Administrator rolem', 'all', '[\"dashboard\",\"sales\",\"sales.orders\",\"sales.invoices\",\"sales.shipments\",\"catalog\",\"catalog.products\",\"catalog.products.create\",\"catalog.products.edit\",\"catalog.products.delete\",\"catalog.categories\",\"catalog.categories.create\",\"catalog.categories.edit\",\"catalog.categories.delete\",\"catalog.attributes\",\"catalog.attributes.create\",\"catalog.attributes.edit\",\"catalog.attributes.delete\",\"catalog.families\",\"catalog.families.create\",\"catalog.families.edit\",\"catalog.families.delete\",\"customers\",\"customers.customers\",\"customers.customers.create\",\"customers.customers.edit\",\"customers.customers.delete\",\"customers.groups\",\"customers.groups.create\",\"customers.groups.edit\",\"customers.groups.delete\",\"customers.reviews\",\"customers.reviews.edit\",\"customers.reviews.delete\",\"configuration\",\"settings\",\"settings.locales\",\"settings.locales.create\",\"settings.locales.edit\",\"settings.locales.delete\",\"settings.currencies\",\"settings.currencies.create\",\"settings.currencies.edit\",\"settings.currencies.delete\",\"settings.exchange_rates\",\"settings.exchange_rates.create\",\"settings.exchange_rates.edit\",\"settings.exchange_rates.delete\",\"settings.inventory_sources\",\"settings.inventory_sources.create\",\"settings.inventory_sources.edit\",\"settings.inventory_sources.delete\",\"settings.channels\",\"settings.channels.create\",\"settings.channels.edit\",\"settings.channels.delete\",\"settings.users\",\"settings.users.users\",\"settings.users.users.create\",\"settings.users.users.edit\",\"settings.users.users.delete\",\"settings.users.roles\",\"settings.users.roles.create\",\"settings.users.roles.edit\",\"settings.users.roles.delete\",\"settings.sliders\",\"settings.sliders.create\",\"settings.sliders.edit\",\"settings.sliders.delete\",\"settings.taxes\",\"settings.taxes.tax-categories\",\"settings.taxes.tax-categories.create\",\"settings.taxes.tax-categories.edit\",\"settings.taxes.tax-categories.delete\",\"settings.taxes.tax-rates\",\"settings.taxes.tax-rates.create\",\"settings.taxes.tax-rates.edit\",\"settings.taxes.tax-rates.delete\",\"promotions\",\"promotions.cart-rules\",\"promotions.cart-rules.create\",\"promotions.cart-rules.edit\",\"promotions.cart-rules.delete\"]', NULL, '2020-05-17 11:08:33');
 
 -- --------------------------------------------------------
 
@@ -6038,6 +6166,7 @@ INSERT INTO `roles` (`id`, `name`, `description`, `permission_type`, `permission
 CREATE TABLE `shipments` (
   `id` int(10) UNSIGNED NOT NULL,
   `status` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `delivery_note` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `total_qty` int(11) DEFAULT NULL,
   `total_weight` int(11) DEFAULT NULL,
   `carrier_code` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -6058,8 +6187,11 @@ CREATE TABLE `shipments` (
 -- Dumping data for table `shipments`
 --
 
-INSERT INTO `shipments` (`id`, `status`, `total_qty`, `total_weight`, `carrier_code`, `carrier_title`, `track_number`, `email_sent`, `customer_id`, `customer_type`, `order_id`, `order_address_id`, `created_at`, `updated_at`, `inventory_source_id`, `inventory_source_name`) VALUES
-(1, NULL, 2, NULL, NULL, 'rewtwet', '3412454', 0, 1, 'Webkul\\Customer\\Models\\Customer', 1, 1, '2020-04-21 14:26:29', '2020-04-21 14:26:30', 1, 'Default');
+INSERT INTO `shipments` (`id`, `status`, `delivery_note`, `total_qty`, `total_weight`, `carrier_code`, `carrier_title`, `track_number`, `email_sent`, `customer_id`, `customer_type`, `order_id`, `order_address_id`, `created_at`, `updated_at`, `inventory_source_id`, `inventory_source_name`) VALUES
+(1, NULL, NULL, 2, NULL, NULL, 'rewtwet', '3412454', 0, 1, 'Webkul\\Customer\\Models\\Customer', 1, 1, '2020-04-21 14:26:29', '2020-04-21 14:26:30', 1, 'Default'),
+(2, NULL, NULL, 2, NULL, NULL, 'NULL', '9090009', 0, 1, 'Webkul\\Customer\\Models\\Customer', 2, 3, '2020-05-16 14:34:52', '2020-05-16 14:34:53', 1, 'Default'),
+(3, NULL, NULL, 1, NULL, NULL, 'NULL', '778', 0, 1, 'Webkul\\Customer\\Models\\Customer', 3, 5, '2020-05-16 14:40:09', '2020-05-16 14:40:11', 1, 'Default'),
+(4, NULL, 'PHOHOOOohh', 1, NULL, NULL, 'NULL', '989809', 0, 1, 'Webkul\\Customer\\Models\\Customer', 4, 7, '2020-05-16 14:43:25', '2020-05-16 14:43:26', 1, 'Default');
 
 -- --------------------------------------------------------
 
@@ -6092,7 +6224,10 @@ CREATE TABLE `shipment_items` (
 --
 
 INSERT INTO `shipment_items` (`id`, `name`, `description`, `sku`, `qty`, `weight`, `price`, `base_price`, `total`, `base_total`, `product_id`, `product_type`, `order_item_id`, `shipment_id`, `additional`, `created_at`, `updated_at`) VALUES
-(1, 'XYZZ', NULL, '102', 2, 110, '500.0000', '500.0000', '1000.0000', '1000.0000', 2, 'Webkul\\Product\\Models\\Product', 1, 1, '{\"quantity\":2,\"_token\":\"iJWc78e9AvwkW2qXQi3C7qKC9ng7OIkRGE938uj7\",\"product_id\":\"2\"}', '2020-04-21 14:26:29', '2020-04-21 14:26:29');
+(1, 'XYZZ', NULL, '102', 2, 110, '500.0000', '500.0000', '1000.0000', '1000.0000', 2, 'Webkul\\Product\\Models\\Product', 1, 1, '{\"quantity\":2,\"_token\":\"iJWc78e9AvwkW2qXQi3C7qKC9ng7OIkRGE938uj7\",\"product_id\":\"2\"}', '2020-04-21 14:26:29', '2020-04-21 14:26:29'),
+(2, 'XYZZ', NULL, '102', 2, 110, '500.0000', '500.0000', '1000.0000', '1000.0000', 2, 'Webkul\\Product\\Models\\Product', 2, 2, '{\"_token\":\"Uq4fgcQGnxLZFq87RyC2h5NMF0e6nfsdPd59BmV2\",\"product_id\":\"2\",\"quantity\":2}', '2020-05-16 14:34:52', '2020-05-16 14:34:52'),
+(3, 'XYZZ', NULL, '102', 1, 55, '500.0000', '500.0000', '500.0000', '500.0000', 2, 'Webkul\\Product\\Models\\Product', 3, 3, '{\"_token\":\"Uq4fgcQGnxLZFq87RyC2h5NMF0e6nfsdPd59BmV2\",\"product_id\":\"2\",\"quantity\":\"1\"}', '2020-05-16 14:40:10', '2020-05-16 14:40:10'),
+(4, 'XYZZ', NULL, '102', 1, 55, '500.0000', '500.0000', '500.0000', '500.0000', 2, 'Webkul\\Product\\Models\\Product', 4, 4, '{\"_token\":\"Uq4fgcQGnxLZFq87RyC2h5NMF0e6nfsdPd59BmV2\",\"product_id\":\"2\",\"quantity\":\"1\"}', '2020-05-16 14:43:25', '2020-05-16 14:43:25');
 
 -- --------------------------------------------------------
 
@@ -7084,7 +7219,7 @@ ALTER TABLE `admins`
 -- AUTO_INCREMENT for table `attributes`
 --
 ALTER TABLE `attributes`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT for table `attribute_families`
@@ -7114,7 +7249,7 @@ ALTER TABLE `attribute_option_translations`
 -- AUTO_INCREMENT for table `attribute_translations`
 --
 ALTER TABLE `attribute_translations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
 
 --
 -- AUTO_INCREMENT for table `bookings`
@@ -7168,7 +7303,7 @@ ALTER TABLE `booking_product_table_slots`
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `cart_address`
@@ -7180,7 +7315,7 @@ ALTER TABLE `cart_address`
 -- AUTO_INCREMENT for table `cart_items`
 --
 ALTER TABLE `cart_items`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `cart_item_inventories`
@@ -7408,13 +7543,13 @@ ALTER TABLE `order_payment`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `product_attribute_values`
 --
 ALTER TABLE `product_attribute_values`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=94;
 
 --
 -- AUTO_INCREMENT for table `product_bundle_options`
@@ -7462,7 +7597,7 @@ ALTER TABLE `product_downloadable_sample_translations`
 -- AUTO_INCREMENT for table `product_flat`
 --
 ALTER TABLE `product_flat`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `product_grouped_products`
@@ -7474,13 +7609,13 @@ ALTER TABLE `product_grouped_products`
 -- AUTO_INCREMENT for table `product_images`
 --
 ALTER TABLE `product_images`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `product_inventories`
 --
 ALTER TABLE `product_inventories`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `product_ordered_inventories`
@@ -7516,13 +7651,13 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT for table `shipments`
 --
 ALTER TABLE `shipments`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `shipment_items`
 --
 ALTER TABLE `shipment_items`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `sliders`
